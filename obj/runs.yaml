@@ -1,0 +1,135 @@
+'2020-08-20T12:24:11.044000':
+  category: GNATprove
+  files:
+  - C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    deliverysystem.adb:69:04: "procedure" should be "function"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-08-20T12:24:11.044000'
+'2020-08-20T12:26:12.966000':
+  category: GNATprove
+  files:
+  - C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    deliverysystem.adb:69:44: missing "is"
+
+    deliverysystem.ads:47:62: mixed logical operators in expression
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-08-20T12:26:12.966000'
+'2020-08-20T12:26:23.459000':
+  category: GNATprove
+  files:
+  - C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    deliverysystem.ads:47:62: mixed logical operators in expression
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-08-20T12:26:23.459000'
+'2020-08-20T12:26:55.899000':
+  category: GNATprove
+  files:
+  - C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    deliverysystem.adb:75:14: procedure cannot return value (use function)
+
+    deliverysystem.ads:48:16: attribute "Result" can only appear in postcondition
+    of function
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-08-20T12:26:55.899000'
+'2020-08-20T12:27:58.016000':
+  category: GNATprove
+  files:
+  - C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    deliverysystem.adb:75:21: "=" should be ":="
+
+    deliverysystem.ads:48:16: if expression must be parenthesized
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-08-20T12:27:58.016000'
+'2020-08-20T12:28:23.551000':
+  category: GNATprove
+  files:
+  - C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-08-20T12:28:23.551000'
+'2020-08-20T12:34:27.986000':
+  category: GNATprove
+  files:
+  - C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    deliverysystem.adb:84:04: "procedure" should be "function"
+
+    deliverysystem.adb:88:14: "=" should be ":="
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-08-20T12:34:27.986000'
+'2020-08-20T12:34:54.525000':
+  category: GNATprove
+  files:
+  - C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    deliverysystem.ads:50:26: identifier expected
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-08-20T12:34:54.525000'
+'2020-08-20T12:35:11.135000':
+  category: GNATprove
+  files:
+  - C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in C:\Users\New\Desktop\gitprojects\highIntegrityAnestheticDeliverySystem\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2020-08-20T12:35:11.135000'

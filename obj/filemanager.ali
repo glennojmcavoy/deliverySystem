@@ -1,0 +1,87 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U filemanager%b		filemanager.adb		0fdec12c NE OO PK
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+
+U filemanager%s		filemanager.ads		f6940871 EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20200228061810 76789da1 ada%s
+D a-comlin.ads		20200228061810 4aa66568 ada.command_line%s
+D a-except.ads		20200228061810 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200228061810 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200228061810 119b8fb3 ada.streams%s
+D a-tags.ads		20200228061810 edddc8f0 ada.tags%s
+D a-textio.ads		20200228061810 aef4d56d ada.text_io%s
+D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+D filemanager.ads	20200820022710 12c6b874 filemanager%s
+D filemanager.adb	20200820022710 1d187958 filemanager%b
+D interfac.ads		20200228061810 5ab55268 interfaces%s
+D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
+D system.ads		20200228061810 32a08138 system%s
+D s-conca3.ads		20200228061810 0b705ca5 system.concat_3%s
+D s-crtl.ads		20200228061810 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200228061810 54135002 system.exception_table%s
+D s-ficobl.ads		20200228061810 078245e4 system.file_control_block%s
+D s-parame.ads		20200228061810 4752c4cb system.parameters%s
+D s-secsta.ads		20200327060540 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200228061810 a7318a92 system.soft_links%s
+D s-stache.ads		20200228061810 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200228061810 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200228061810 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200228061810 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200319060540 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200228061810 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [initializeinput filemanager 8 14 none]
+G c Z s b [initializeoutput filemanager 10 14 none]
+G c Z s b [initializenewinput filemanager 12 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|1r6 1r23 1r41 2r1
+X 2 a-comlin.ads
+36K13*Command_Line 144e21 9|1w45 2r5
+70I9*Exit_Status<integer>
+73i4*Failure{70I9} 10|19r30 42r27 59r30
+75U14*Set_Exit_Status 10|19s13 42s10 59s13
+X 7 a-textio.ads
+57K13*Text_IO 727e16 9|1w10 1r27
+64P9*File_Type 9|6r20
+66n23*In_File{66E9} 10|13r24
+66n32*Out_File{66E9} 10|36r23
+66n42*Append_File{66E9} 10|30r26 53r26
+99U14*Create 10|35s7 52s10
+100p7 File{64P9} 10|35r15 52r18
+101e7 Mode{66E9} 10|36r15 53r18
+102a7 Name{string} 10|37r15 54r18
+114U14*Open 10|12s10 29s10
+115p7 File{64P9} 10|12r16 29r16
+116e7 Mode{66E9} 10|13r16 30r18
+117a7 Name{string} 10|14r16 31r18
+179V13*Standard_Error{64P9} 10|17s23 40s20 57s23
+498U14*Put_Line 10|17s13 40s10 57s13
+X 9 filemanager.ads
+4K9*FileManager 14l5 14e16 10|1b16 65l7 65t18
+6p4*Output{7|64P9} 10|29m24 29r24 35m23 35r23
+6p12*Input{7|64P9} 10|12m24 12r24 52m26 52r26
+8U14*initializeInput 8>30 10|9b14 23l8 23t23
+8a30 readFrom{string} 10|9b30 14r24 18r43
+10U14*initializeOutput 10>31 10|26b14 46l8 46t24
+10a31 writeTo{string} 10|26b31 31r26 37r23 41r54
+12U14*initializeNewInput 12>33 10|49b14 63l8 63t26
+12a33 readFrom{string} 10|49b33 54r26
+

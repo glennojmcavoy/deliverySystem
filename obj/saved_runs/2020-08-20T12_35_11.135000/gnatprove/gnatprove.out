@@ -1,0 +1,31 @@
+Summary of SPARK analysis
+=========================
+
+------------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total      Flow   CodePeer                      Provers   Justified   Unproved
+------------------------------------------------------------------------------------------------------------
+Data Dependencies                 .         .          .                            .           .          .
+Flow Dependencies                 .         .          .                            .           .          .
+Initialization                    .         .          .                            .           .          .
+Non-Aliasing                      .         .          .                            .           .          .
+Run-time Checks                  16         .          .                    16 (CVC4)           .          .
+Assertions                       12         .          .                    12 (CVC4)           .          .
+Functional Contracts              8         .          .    8 (CVC4 64%, Trivial 36%)           .          .
+LSP Verification                  .         .          .                            .           .          .
+Termination                       .         .          .                            .           .          .
+Concurrency                       .         .          .                            .           .          .
+------------------------------------------------------------------------------------------------------------
+Total                            36         .          .                    36 (100%)           .          .
+
+
+max steps used for successful proof: 1
+
+Analyzed 1 unit
+in unit deliverysystem, 7 subprograms and packages out of 7 analyzed
+  deliverySystem at deliverysystem.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  deliverySystem.CalcBPM at deliverysystem.ads:31 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (8 checks)
+  deliverySystem.CalcST at deliverysystem.ads:38 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (10 checks)
+  deliverySystem.IsInfuse at deliverysystem.ads:58 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  deliverySystem.IsSoundTocsin at deliverysystem.ads:45 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  deliverySystem.soundTocsin at deliverysystem.ads:50 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  deliverySystem.sumEEGR at deliverysystem.ads:65 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (15 checks)

@@ -1,0 +1,2 @@
+deliverysystem.adb:75:21: "=" should be ":="
+deliverysystem.ads:48:16: if expression must be parenthesized

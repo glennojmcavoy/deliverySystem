@@ -1,0 +1,2 @@
+deliverysystem.adb:75:14: procedure cannot return value (use function)
+deliverysystem.ads:48:16: attribute "Result" can only appear in postcondition of function

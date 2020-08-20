@@ -30,8 +30,8 @@ package body deliverySystem with SPARK_Mode is
    end CalcBPM;
    
    
-   -- # Calculates the number of seconds the brain is in a suppressed state (indicated by a 1)
-   --  For example: (0,0,0,0,0,0,0,0,1,0) = 1 second
+   -- # Calculates the number of seconds the brain is in a suppressed state (indicated by a 0)
+   --  For example: (0,0,0,0,0,0,0,0,1,0) = 9 seconds
    function CalcST(eegR: in eegReadings) return Natural is 
       
       supT: Integer := eegR(eegR'First);
@@ -59,7 +59,7 @@ package body deliverySystem with SPARK_Mode is
          
       end loop;
       
-      return supT;
+      return eegReadings'Length - supT;
       
    end CalcST;
    
@@ -81,12 +81,28 @@ package body deliverySystem with SPARK_Mode is
    end IsSoundTocsin;
    
    
-   -- # Decides if to infuse patient with medicine
-   -- For example: supT = 9 will return false
-   function IsInfuse(supT: in Integer) return Boolean is
+   procedure soundTocsin is
+      
    begin
       
-        if supT < MINIMUM_ST
+      Tocsin := true;
+   
+   end soundTocsin;
+   
+   procedure resetTocsin is
+      
+   begin
+      
+      Tocsin := true;
+   
+   end resetTocsin;
+   
+   -- # Decides if to infuse patient with medicine
+   -- For example: supT = 9 will return false
+   function IsInfuse(suppressionTime: in Integer) return Boolean is
+   begin
+      
+        if suppressionTime < MINIMUM_ST
         
           then return true;
          
@@ -96,6 +112,22 @@ package body deliverySystem with SPARK_Mode is
          
    end IsInfuse;
     
+   procedure InfusionPumpOn()
+     
+   begin
+      
+      InfusionPump = true;
+      
+   end IsInfuse;   
+   
+   procedure InfusionPumpOff()
+     
+   begin
+      
+      InfusionPump = false;
+      
+   end IsInfuse;   
+   
    -- # Auxillary function Ghost function which sums the values of an array to produce the supression time
    function sumEEGR (eegR : eegReadings) return eegPartialSums is
       

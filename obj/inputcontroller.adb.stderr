@@ -1,0 +1,2 @@
+inputcontroller.adb:47:13: warning: "return" statement missing following this statement
+inputcontroller.adb:47:13: warning: Program_Error may be raised at run time

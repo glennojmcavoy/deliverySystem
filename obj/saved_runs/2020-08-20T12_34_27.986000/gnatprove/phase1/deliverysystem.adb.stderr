@@ -1,0 +1,2 @@
+deliverysystem.adb:84:04: "procedure" should be "function"
+deliverysystem.adb:88:14: "=" should be ":="
